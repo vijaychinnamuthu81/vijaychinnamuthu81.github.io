@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vijayakumar Chinnamuthu</title>
+<meta name="description" content="Vijayakumar Chinnamuthu – Qualification & Validation consultant for GMP pharma and biotech: C&Q, CSV and automation. Based in Lille, France.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE work: a consultant's calling card, precise and calm
+   IDEA an engineering datasheet / validation package for one person
+   PICTURE a large V-model (URS to PQ) with his deliverables on each stage
+   COLOUR white ground, black ink, cobalt #1240e0 strip and marks, pale #eef2ff zones
+   TYPE Space Grotesk 600 for titles, Inter for text
+   LAYOUT strip nav; title and facts across the top, V-model full width under; phone: stacked, V becomes a list */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0a0d18);--ink:light-dark(#0b0b10,#e8ebf5);--mut:light-dark(#4a4f60,#a3a9bd);--co:light-dark(#1240e0,#5b7cff);--zone:light-dark(#eef2ff,#121a33);--line:light-dark(#d5dcf2,#26304f);--strip:#1240e0}
+:root[data-theme=light]{color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:clip}
+h1,h2,h3{font-family:"Space Grotesk",system-ui,sans-serif;letter-spacing:-.02em;line-height:1.1;margin:0}
+a{color:var(--co)}
+.wrap{max-width:1240px;margin:0 auto}
+.band{padding:clamp(32px,5vw,72px) max(5vw,16px)}
+.strip{background:var(--strip);color:#fff;padding:12px max(5vw,16px);position:sticky;top:0;z-index:5}
+.strip .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px}
+.strip b{font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:17px}
+.strip nav{display:flex;flex-wrap:wrap;gap:4px 18px}
+.strip nav a{color:#fff;text-decoration:none;font-size:15px;padding:6px 0;opacity:.88}
+.strip nav a:hover,.strip nav a:focus-visible{opacity:1;text-decoration:underline}
+.hero h1{font-size:clamp(34px,5vw,52px);font-weight:700;text-wrap:balance;max-width:16ch}
+.hero .lead{font-size:clamp(17px,1.6vw,20px);color:var(--mut);max-width:62ch;margin:16px 0 0}
+.top{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:32px;align-items:end}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:2px solid var(--ink)}
+.facts div{padding:12px 0 10px;border-bottom:1px solid var(--line)}
+.facts div:nth-child(odd){padding-right:14px}
+.facts strong{display:block;font-family:"Space Grotesk",sans-serif;font-size:clamp(26px,3vw,34px);font-weight:600;color:var(--co);line-height:1.1}
+.facts span{font-size:14px;color:var(--mut)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:10px 18px;border:2px solid var(--co);border-radius:4px;font-weight:600;text-decoration:none;font-size:15px}
+.btn.solid{background:var(--co);color:#fff}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.vbox{margin-top:36px;background:var(--zone);border:1px solid var(--line);border-radius:6px;padding:18px 18px 10px}
+.vbox h2{font-size:18px;font-weight:600}
+.vbox p{margin:4px 0 0;font-size:14px;color:var(--mut)}
+.fig{position:relative;min-height:430px;margin-top:6px}
+.fig>svg{position:absolute;inset:0;width:100%;height:100%}
+svg text{font-family:Inter,sans-serif;paint-order:stroke;stroke:var(--zone);stroke-width:4px}
+.vlist{display:none;margin:12px 0 6px;padding:0;list-style:none}
+.vlist li{display:grid;grid-template-columns:4.5em minmax(0,1fr);gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
+.vlist b{color:var(--co);font-family:"Space Grotesk",sans-serif}
+h2.sec{font-size:clamp(28px,3.4vw,40px);font-weight:700;margin-bottom:8px}
+.intro{color:var(--mut);max-width:66ch;margin:0 0 28px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{border:1px solid var(--line);border-radius:6px;padding:22px;background:var(--bg)}
+.card h3{font-size:21px;font-weight:600;margin-bottom:8px}
+.card p{margin:0 0 10px}
+.card ul{margin:0;padding-left:18px;color:var(--mut);font-size:15px}
+.zone{background:var(--zone)}
+.about{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px}
+.about p{margin:0 0 14px;max-width:64ch}
+.spec{width:100%;border-collapse:collapse;font-size:15px}
+.spec th{text-align:left;font-weight:600;width:38%;padding:9px 12px 9px 0;vertical-align:top}
+.spec td{padding:9px 0;color:var(--mut)}
+.spec tr{border-bottom:1px solid var(--line)}
+.time{border-left:3px solid var(--co);margin-left:6px}
+.job{position:relative;padding:0 0 26px 24px}
+.job::before{content:"";position:absolute;left:-9px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:3px solid var(--co)}
+.job h3{font-size:20px;font-weight:600}
+.job .at{font-size:15px;color:var(--mut);margin:2px 0 8px}
+.job .at span{white-space:nowrap}
+.job ul{margin:0;padding-left:18px;max-width:78ch}
+.job li{margin-bottom:4px}
+.proj{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.tag{display:inline-block;font-size:13px;padding:2px 8px;border-radius:3px;background:var(--zone);color:var(--co);font-weight:600;margin-bottom:10px}
+.zone .tag{background:var(--bg)}
+.skills{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chips span{border:1px solid var(--line);border-radius:3px;padding:4px 10px;font-size:14px;background:var(--bg)}
+.contact{background:var(--strip);color:#fff}
+.contact a{color:#fff}
+.contact .grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px;align-items:start}
+.contact h2{font-size:clamp(30px,4vw,44px);font-weight:700}
+.contact p{max-width:58ch;opacity:.92}
+.clist{list-style:none;margin:0;padding:0;border-top:2px solid #fff}
+.clist li{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.35)}
+.clist b{font-weight:600}
+.clist span,.clist a{overflow-wrap:anywhere}
+footer{padding:18px max(5vw,16px);font-size:14px;color:var(--mut)}
+@media(max-width:900px){.top,.about,.skills,.contact .grid{grid-template-columns:minmax(0,1fr)}.proj{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:640px){.cards{grid-template-columns:minmax(0,1fr)}.fig{display:none}.vlist{display:block}.strip{position:static}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#tok{display:none}}
+</style>
+</head>
+<body>
+<div class="strip"><div class="wrap">
+  <b>Vijayakumar Chinnamuthu</b>
+  <nav aria-label="Main">
+    <a href="#services">Services</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+  </nav>
+</div></div>
+
+<header class="band hero"><div class="wrap">
+  <div class="top">
+    <div>
+      <h1>Qualification &amp; validation for GMP pharma and biotech</h1>
+      <p class="lead">I take equipment and computerized systems from requirements to qualified, audit-ready status: C&amp;Q, CSV and the automation underneath. Validation lead at Merck Millipore and for Novo Nordisk through HORIBA Scientific.</p>
+      <div class="cta">
+        <a class="btn solid" href="#contact">Discuss an assignment</a>
+        <a class="btn" href="https://www.linkedin.com/in/vijayakumar-chinnamuthu">LinkedIn profile</a>
+      </div>
+    </div>
+    <div class="facts" aria-label="Key figures">
+      <div><strong>16 years</strong><span>industrial experience</span></div>
+      <div><strong>9+ years</strong><span>in GMP pharma and biotech</span></div>
+      <div><strong>100+</strong><span>validation documents authored, reviewed or approved</span></div>
+      <div><strong>0 critical</strong><span>observations across 2 EMA and 1 FDA inspection cycles</span></div>
+    </div>
+  </div>
+
+  <div class="vbox">
+    <h2>The lifecycle I deliver, end to end</h2>
+    <p>Each specification is verified by the matching test, with risk assessment and traceability running through the whole project.</p>
+    <div class="fig"><svg id="vm" role="img" aria-label="V-model: URS, FS and design specification on the left, build and configuration at the bottom, IQ, OQ and PQ on the right"></svg></div>
+    <ul class="vlist">
+      <li><b>URS</b><span>User requirements, verified by PQ</span></li>
+      <li><b>FS</b><span>Functional specification, verified by OQ</span></li>
+      <li><b>DS/SDS</b><span>Design specification, verified by IQ</span></li>
+      <li><b>Build</b><span>Configuration, FAT and SAT with the supplier</span></li>
+      <li><b>IQ</b><span>Installation, calibration certificates, I/O checks</span></li>
+      <li><b>OQ</b><span>Functions, alarms, audit trail, backup/restore</span></li>
+      <li><b>PQ</b><span>Performance under real use</span></li>
+      <li><b>VSR</b><span>Summary report and release, with traceability matrix</span></li>
+    </ul>
+  </div>
+</div></header>
+
+<section id="services" class="band zone"><div class="wrap">
+  <h2 class="sec">What I can do for your project</h2>
+  <p class="intro">Available as a specialist or as validation lead, for short or long assignments, on site or hybrid.</p>
+  <div class="cards">
+    <article class="card"><h3>Equipment commissioning &amp; qualification</h3>
+      <p>DQ, IQ, OQ and PQ for process equipment and skids, from FAT/SAT to handover.</p>
+      <ul><li>I/O, loop, tag-mapping and communication checks</li><li>Sensor range and alarm verification; calibration certificate review</li><li>Wiring and schematic review, hands-on troubleshooting</li></ul></article>
+    <article class="card"><h3>Computerized system validation</h3>
+      <p>Risk-based CSV under GAMP 5, EU Annex 11 and 21 CFR Part 11.</p>
+      <ul><li>VMP, validation plan, URS, FS, FMEA risk assessment, traceability, VSR</li><li>Validation built into agile releases (2- and 4-week sprints)</li><li>Audit trail, periodic and user access reviews (ALCOA+)</li></ul></article>
+    <article class="card"><h3>Automation &amp; SCADA</h3>
+      <p>The automation background behind the validation work.</p>
+      <ul><li>AVEVA SCADA, System Platform and Historian</li><li>Rockwell Studio5000 (CompactLogix), Wago CoDeSys, OPC-UA, Modbus</li><li>Python tools for test automation</li></ul></article>
+    <article class="card"><h3>Quality documents, training &amp; inspection readiness</h3>
+      <p>Getting packages through QA and teams up to speed.</p>
+      <ul><li>Validation SOPs and templates; deviations, CAPA, change control</li><li>Inspection evidence preparation (EMA, FDA)</li><li>CSV training for beginners; coaching field engineers on IQ/OQ</li></ul></article>
+  </div>
+</div></section>
+
+<section id="about" class="band"><div class="wrap about">
+  <div>
+    <h2 class="sec">About me</h2>
+    <p>I started as a SCADA and automation professional and moved into qualification and validation. That mix is what I bring to a project: I can read the electrical schematic, test the I/O, and write and approve the validation package that goes to QA.</p>
+    <p>For more than seven years I was validation lead at Merck Millipore on bioprocessing systems: the Cell Retention System range (50L–2000L) and its Bio4C ACE™ control software, the Smart Mixer and the Integrated Perfusion Bioreactor. I then led the full validation lifecycle for a HORIBA Scientific system supplied to Novo Nordisk.</p>
+    <p>I am based in Lille, France, hold an EU Blue Card, and work in English, with French in progress.</p>
+  </div>
+  <table class="spec" aria-label="Profile summary">
+    <tr><th>Based in</th><td>Lille, France</td></tr>
+    <tr><th>Work status</th><td>EU Blue Card holder (France), mobile across Europe</td></tr>
+    <tr><th>Engagement</th><td>Permanent, contract or freelance (via portage salarial)</td></tr>
+    <tr><th>Regulations</th><td>GAMP 5, EU GMP Annex 11 and 15, 21 CFR Part 11, ALCOA+</td></tr>
+    <tr><th>Languages</th><td>English (C1), French (A1, progressing to A2), Dutch (A1), Tamil (native), Hindi, Telugu, Kannada</td></tr>
+    <tr><th>Education</th><td>BE Electronics &amp; Communications Engineering; Diploma in Computer Science</td></tr>
+  </table>
+</div></section>
+
+<section id="experience" class="band zone"><div class="wrap">
+  <h2 class="sec">Experience</h2>
+  <p class="intro">Most recent first.</p>
+  <div class="time">
+    <div class="job"><h3>Professional development &amp; consulting</h3>
+      <p class="at">Independent, Lille · <span>Feb 2026 – present</span></p>
+      <ul><li>Freelance trainer teaching a CSV course for beginners.</li><li>Training in AI in validation (Udemy), Anthropic's Claude 101 and AVEVA PI System Fundamentals; building Python validation tools.</li></ul></div>
+    <div class="job"><h3>Quality &amp; Validation Consultant</h3>
+      <p class="at">Adentis · client Novo Nordisk / HORIBA Scientific, Lille · <span>Jun 2024 – Jan 2026</span></p>
+      <ul><li>Led the full validation lifecycle: VMP, validation plan, URS, FS, risk assessments, SOPs and IQ/OQ/PQ protocols; reviewed and approved in the QMS.</li><li>Presented a risk-based approach and agreed the required scope with Novo Nordisk.</li><li>Approved test plans and results for each 2-week release; prepared evidence for an EMA inspection.</li></ul></div>
+    <div class="job"><h3>ADAS Systool Design Lead</h3>
+      <p class="at">Valeo, Paris · <span>Oct 2023 – Apr 2024</span></p>
+      <ul><li>Designed the ADAS test bench and test automation; tested automotive safety ECUs.</li></ul></div>
+    <div class="job"><h3>Validation Lead</h3>
+      <p class="at">Infosys · client Merck Millipore, France &amp; India · <span>Dec 2011 – Sep 2023</span></p>
+      <ul><li>CSV lead for the Cell Retention System range and Bio4C ACE™, approving test plans, results and releases every 4 weeks.</li><li>C&amp;Q of the 50L Cell Retention System and the Integrated Perfusion Bioreactor; IQ/OQ of the Smart Mixer; FAT/SAT.</li><li>Supported 1 EMA and 1 FDA inspection with zero critical observations.</li><li>Led a 2-member team and coordinated a 6-member validation team in Bangalore.</li><li>Earlier: AVEVA SCADA development for oil &amp; gas; LabVIEW test benches for avionics.</li></ul></div>
+  </div>
+</div></section>
+
+<section id="projects" class="band"><div class="wrap">
+  <h2 class="sec">Projects &amp; tools</h2>
+  <p class="intro">Side projects where I use code to make validation work faster and more reliable.</p>
+  <div class="proj">
+    <article class="card"><span class="tag">Python</span><h3>IQ automation tool</h3><p>A portfolio tool that automates installation qualification checks and records the results.</p><a href="https://github.com/vijaychinnamuthu81">View on GitHub</a></article>
+    <article class="card"><span class="tag">In progress</span><h3>Audit-trail review assistant</h3><p>Reads an audit-trail export and flags data-integrity risks against ALCOA+, such as missing change reasons and deletions. Built for the GeeksforGeeks × OpenAI "Build with Codex" program.</p><a href="https://github.com/vijaychinnamuthu81">View on GitHub</a></article>
+    <article class="card"><span class="tag">Python · OPC UA</span><h3>Endurance test tool</h3><p>Built at HORIBA Scientific to run OPC UA endurance tests with configurable duration, including 7-day runs.</p></article>
+  </div>
+</div></section>
+
+<section id="skills" class="band zone"><div class="wrap skills">
+  <div>
+    <h2 class="sec">Skills &amp; tools</h2>
+    <div class="chips" aria-label="Skills">
+      <span>DQ / IQ / OQ / PQ</span><span>FAT / SAT</span><span>GAMP 5</span><span>EU Annex 11 &amp; 15</span><span>21 CFR Part 11</span><span>ALCOA+</span><span>FMEA risk assessment</span><span>Traceability matrix</span><span>Deviations &amp; CAPA</span><span>Change control</span><span>Audit trail review</span><span>Supplier assessment</span><span>AVEVA SCADA</span><span>Rockwell Studio5000</span><span>Wago CoDeSys</span><span>OPC-UA</span><span>Python</span><span>LabVIEW</span><span>PowerShell</span><span>Azure DevOps</span><span>JIRA</span><span>JAMA</span><span>XRAY</span><span>VMware</span><span>SQL Server</span>
+    </div>
+  </div>
+  <div>
+    <h2 class="sec">Certifications</h2>
+    <table class="spec">
+      <tr><td>SAFe 4.5 Agilist (renewal in progress)</td></tr>
+      <tr><td>AVEVA System Platform · AVEVA Operational Manager · AVEVA Historian</td></tr>
+      <tr><td>Certified LabVIEW Associate Developer</td></tr>
+      <tr><td>French Electrical Certification</td></tr>
+    </table>
+  </div>
+</div></section>
+
+<section id="contact" class="band contact"><div class="wrap grid">
+  <div>
+    <h2>Need validation support?</h2>
+    <p>I'm available now for permanent roles, contracts and freelance assignments across Europe. Send me a short note about the project and I'll reply within a day.</p>
+  </div>
+  <ul class="clist">
+    <li><b>Email</b><span>vijaychinnamuthu81@gmail.com</span></li>
+    <li><b>Phone</b><span>+33 7 52 81 18 56</span></li>
+    <li><b>LinkedIn</b><a href="https://www.linkedin.com/in/vijayakumar-chinnamuthu">linkedin.com/in/vijayakumar-chinnamuthu</a></li>
+    <li><b>GitHub</b><a href="https://github.com/vijaychinnamuthu81">github.com/vijaychinnamuthu81</a></li>
+    <li><b>Location</b><span>Lille, France · open to relocation</span></li>
+  </ul>
+</div></section>
+
+<footer><div class="wrap">© 2026 Vijayakumar Chinnamuthu · Qualification &amp; Validation, Lille, France</div></footer>
+
+<script>
+{
+const s=document.getElementById('vm');
+const L=[['URS','User requirements'],['FS','Functional spec'],['DS / SDS','Design spec']];
+const R=[['PQ','Performance'],['OQ','Operation'],['IQ','Installation']];
+const draw=()=>{
+  const W=s.clientWidth,H=s.clientHeight;if(!W||!H)return;
+  const top=82,bot=H-40,mx=W/2,left=Math.max(70,W*.1),right=W-left,rows=3;
+  const yy=i=>top+(bot-top)*(i/rows);
+  const xl=i=>left+(mx-left)*(i/rows)*0.82,xr=i=>right-(right-mx)*(i/rows)*0.82;
+  const bw=Math.min(170,W*.19),bh=50;
+  let o='';
+  o+=`<rect x="${left-bw/2}" y="10" width="${right-left+bw}" height="26" rx="3" fill="var(--bg)" stroke="var(--line)"/>`;
+  o+=`<text x="${mx}" y="28" text-anchor="middle" font-size="14" fill="var(--mut)">Risk assessment (FMEA) and traceability matrix across every stage</text>`;
+  const path=`M${xl(0)},${yy(0)} L${xl(2)},${yy(2)} L${mx},${bot} L${xr(2)},${yy(2)} L${xr(0)},${yy(0)}`;
+  o+=`<path id="vp" d="${path}" fill="none" stroke="var(--co)" stroke-width="6" stroke-linejoin="round" opacity=".9"/>`;
+  for(let i=0;i<rows;i++){
+    o+=`<line x1="${xl(i)+bw/2+6}" y1="${yy(i)}" x2="${xr(i)-bw/2-6}" y2="${yy(i)}" stroke="var(--mut)" stroke-dasharray="5 6"/>`;
+    o+=`<text x="${mx}" y="${yy(i)-8}" text-anchor="middle" font-size="14" fill="var(--mut)">verified by</text>`;
+  }
+  const box=(x,y,a,b)=>`<rect x="${x-bw/2}" y="${y-bh/2}" width="${bw}" height="${bh}" rx="4" fill="var(--bg)" stroke="var(--co)" stroke-width="2"/><text x="${x}" y="${y-3}" text-anchor="middle" font-size="16" font-weight="700" fill="var(--ink)" style="stroke:var(--bg)">${a}</text><text x="${x}" y="${y+15}" text-anchor="middle" font-size="13" fill="var(--mut)" style="stroke:var(--bg)">${b}</text>`;
+  L.forEach((d,i)=>o+=box(xl(i),yy(i),d[0],d[1]));
+  R.forEach((d,i)=>o+=box(xr(i),yy(i),d[0],d[1]));
+  o+=`<rect x="${mx-bw*.7}" y="${bot-bh/2}" width="${bw*1.4}" height="${bh}" rx="4" fill="var(--co)"/><text x="${mx}" y="${bot-3}" text-anchor="middle" font-size="16" font-weight="700" fill="#fff" style="stroke:none">Build &amp; configure</text><text x="${mx}" y="${bot+15}" text-anchor="middle" font-size="13" fill="#fff" style="stroke:none">FAT / SAT with supplier</text>`;
+  o+=`<text x="${xr(0)}" y="${yy(0)+bh/2+20}" text-anchor="middle" font-size="13" fill="var(--co)">then VSR and release</text>`;
+  o+=`<circle id="tok" r="7" fill="var(--ink)"><animateMotion dur="7s" repeatCount="indefinite" rotate="auto"><mpath href="#vp"/></animateMotion></circle>`;
+  s.innerHTML=o;
+};
+new ResizeObserver(draw).observe(s);
+draw();
+}
+</script>
+</body>
+</html>
